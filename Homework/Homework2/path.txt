@@ -1,0 +1,7 @@
+pscp -i C:\Users\kris\.ssh\MyKeyPair.ppk C:\some\missingcards.jar  ec2-user@35.167.90.41:test/
+
+chmod 400 MyKeyPair.pem
+
+ssh -i "MyKeyPair.pem" ubuntu@ec2-52-10-210-131.us-west-2.compute.amazonaws.com
+
+Linux¿Ô√Ê”√ tar -zxvf xxx.tar
