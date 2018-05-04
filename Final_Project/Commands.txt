@@ -1,0 +1,102 @@
+Instance Information: Ubuntu Server 16.04 LTS (HVM), SSD Volume Type - ami-f4cc1de2
+Family: General purpose
+Type: t2.medium
+vCPUs: 2
+Memory(GiB): 4
+Instance Storage(GB): 24GB
+
+
+Environment of master instance and slave instances:
+export JAVA_HOME=/usr/lib/jvm/java-1.8.0-openjdk-amd64
+export HADOOP_HOME=/usr/local/hadoop
+export PATH=${JAVA_HOME}/bin:${PATH}
+export HADOOP_CLASSPATH=${JAVA_HOME}/lib/tools.jar
+export PATH=$PATH:/usr/local/hadoop/bin
+export OOZIE_HOME=/usr/local/oozie/distro/target/oozie-4.3.0-distro/oozie-4.3.0
+export PATH=$PATH:$OOZIE_HOME/bin
+
+
+Local: Windows Operation System
+User use MobaXterm to manage instances and files
+
+
+NOTE£º
+To change the input file, please change the inputFilePath in the job.properties file which we provided. Please refer the format in the job.properties file
+version of hadoop: 2.8.0
+version of oozie: 4.3.0
+
+
+Commmands:
+1. Upload the following files to the directory /usr/local/hadoop (just pull the java files to the master instance's Sftp area of MobaXterm)
+TokenizerMapper.java
+IntSumReducer.java
+AirportsMapper.java
+CalculateReducer.java
+CancellationsMapper.java
+CountReducer.java
+job.properties
+workflow.xml
+
+2. Create a folder named input in /usr/local/hadoop:
+$ mkdir input
+
+3. Upload the entire data set to the input directory /usr/local/hadoop/input
+
+4. Start Hadoop Cluster and historyserver:
+$ cd $HADOOP_HOME
+$ hdfs namenode -format
+$ sbin/start-all.sh
+$ sbin/mr-jobhistory-daemon.sh start historyserver
+
+5.See the status of hadoop cluster, open any browser, type the following web address:
+Public DNS of master VM:50070 
+
+6. Upload input file to HDFS:
+$ hdfs dfs -mkdir -p input
+$ hdfs dfs -put input/* input
+
+7. Upload oozie's share file to HDFS:
+$ cd $OOZIE_HOME
+$ sudo tar xvf oozie-sharelib-4.3.0.tar.gz #change the sharelib name to your local sharelib name
+$ cd $HADOOP_HOME
+$ hdfs dfs -put $OOZIE_HOME/share share
+
+8. Upload workflow.xml to HDFS:
+$ hdfs dfs -mkdir cs644project
+$ hdfs dfs -put workflow.xml cs644project
+
+9. Compile the java files and make a jar file and upload the jar file to HDFS cs644project/lib:
+$ hadoop com.sun.tools.javac.Main *.java
+$ jar cf cs644project.jar *.class
+$ hdfs dfs -mkdir cs644project/lib
+$ hdfs dfs -put cs644project.jar cs644project/lib
+
+10. Initialize the database of oozie:
+$ $OOZIE_HOME/bin/ooziedb.sh create -sqlfile oozie.sql -run
+
+11. Start oozie:
+$ $OOZIE_HOME/bin/oozied.sh start
+
+12. Check the status of oozie, if shows System mode: NORMAL, do next step:
+$ $OOZIE_HOME/bin/oozie admin -oozie http://localhost:11000/oozie -status
+
+12: Run the program:
+$ oozie job -oozie http://localhost:11000/oozie -config job.properties -run
+
+13. See the job status in the oozie workflow, type this address in any web browser:
+Public DNS of master VM:11000
+(On this website you can also know the oozie workflow execution time)
+
+14. Get results:
+$ hdfs dfs -get cs644project/output output
+
+14. See the result:
+$ vim output/OnScheduleAirlines/part-r-00000
+Exit:
+:q!
+$ vim output/AirportsTaxiTime/part-r-00000
+Exit:
+:q!
+$ vim output/Cancellations/part-r-00000
+Exit:
+:q!

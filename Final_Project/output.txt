@@ -1,0 +1,720 @@
+-------------------------------------------------------------
+2VMs-5VMs-8VMs-11VMs-14VMs-17VMs-20VMs/Entire data set (total 22 years from 1987 to 2008)
+-------------------------------------------------------------
+2VMs Execution Time:34 minutes 49 seconds
+5VMs Execution Time:14 minutes 42 seconds
+8VMs Execution Time:11 minutes 46 seconds
+11VMs Execution Time:10 minutes 56 seconds
+14VMs Execution Time:11 minutes 31 seconds
+17VMs Execution Time:11 minutes 20 seconds
+20VMs Execution Time:11 minutes 48 seconds
+-
+Question 1(On Schedule Airlines):
+-
+highest	
+HA	0.9130613247134968
+AQ	0.8704614308249784
+ML (1)	0.8068837801472822
+lowest	
+PI	0.6622176293682854
+EV	0.6931310266349684
+B6	0.7088574013567
+-
+Question 2(Airports Taxi Time):
+-
+highest	
+CKB	197.85714285714286
+MKK	45.77816291161179
+VLD	22.280210396885032
+lowest	
+CYS	1.3333333333333333
+BFF	1.3333333333333333
+PVU	1.7692307692307692
+zero data	
+LAR	0.0
+LBF	0.0
+RCA	0.0
+SKA	0.0
+-
+Question 3(Cancellation Reasons):
+-
+Cancellation Code is A: carrier	The count is: 317868
+-
+-------------------------------------------------------------
+22VMs/Increase data set (from year 1987 to year 2008)
+-------------------------------------------------------------
+year 1987
+---------------
+-
+execution time: 1 minutes 26 seconds
+-
+Question 1(On Schedule Airlines):
+-
+highest	
+WN	0.7630249087115284
+AA	0.7583959067456291
+EA	0.7219411920730552
+lowest	
+PS	0.5738111613283553
+DL	0.6001938586030201
+AS	0.626649638143891
+-
+Question 2(Airports Taxi Time):
+-
+There is no value can be used, so no output.
+-
+Question 3(Cancellation Reasons):
+-
+There is no the most common reason for flight cancellations.
+---------------
+year 1987-1988
+---------------
+-
+execution time: 2 minutes 25 seconds
+-
+Question 1(On Schedule Airlines):
+-
+highest	
+WN	0.8144007447056085
+HP	0.7828351459364572
+AA	0.7818557264506218
+lowest	
+NW	0.6922111690605399
+US	0.693095559678247
+PI	0.6949684992693484
+-
+Question 2(Airports Taxi Time):
+-
+There is no value can be used, so no output.	
+-
+Question 3(Cancellation Reasons):
+-
+There is no the most common reason for flight cancellations.
+---------------
+year 1987-1989
+---------------
+-
+execution time: 3 minutes 05 seconds
+-
+Question 1(On Schedule Airlines):
+-
+highest	
+WN	0.7854846714896611
+HP	0.7766122385599445
+AA	0.7693288649555268
+lowest	
+PI	0.6622176293682854
+US	0.6681784391261705
+UA	0.6935194135871504
+-
+Question 2(Airports Taxi Time):
+-
+There is no value can be used, so no output.
+-
+Question 3(Cancellation Reasons):
+-
+There is no the most common reason for flight cancellations.
+---------------
+year 1987-1990
+---------------
+-
+execution time: 2 minutes 59 seconds
+-
+Question 1(On Schedule Airlines):
+-
+highest	
+WN	0.775724991222345
+HP	0.7753026649686038
+AA	0.7610075153006783
+lowest	
+PI	0.6622176293682854
+UA	0.704616492312905
+US	0.7072288387029985
+-
+Question 2(Airports Taxi Time):
+-
+There is no value can be used, so no output.	
+-
+Question 3(Cancellation Reasons):
+-
+There is no the most common reason for flight cancellations.	
+---------------
+year 1987-1991
+---------------
+-
+execution time: 2 minutes 51 seconds
+-
+Question 1(On Schedule Airlines):
+-
+highest	
+ML (1)	0.8068837801472822
+WN	0.7822933803989086
+HP	0.7801342436618923
+lowest	
+PI	0.6622176293682854
+UA	0.7134938178831906
+PS	0.7139489385488438
+-
+Question 2(Airports Taxi Time):
+-
+There is no value can be used, so no output.
+-
+Question 3(Cancellation Reasons):
+-
+There is no the most common reason for flight cancellations.
+---------------
+year 1987-1992
+---------------
+-
+execution time: 3 minutes 17 seconds
+-
+Question 1(On Schedule Airlines):
+-
+highest	
+WN	0.8082039866059741
+ML (1)	0.8068837801472822
+HP	0.7925729331588797
+lowest	
+PI	0.6622176293682854
+PS	0.7139489385488438
+DL	0.7218058197117049
+-
+Question 2(Airports Taxi Time):
+-
+There is no value can be used, so no output.	
+-
+Question 3(Cancellation Reasons):
+-
+There is no the most common reason for flight cancellations.
+---------------
+year 1987-1993
+---------------
+-
+execution time: 3 minutes 36 seconds
+-
+Question 1(On Schedule Airlines):
+-
+highest	
+WN	0.8196225801144694
+ML (1)	0.8068837801472822
+HP	0.7935923712788197
+lowest	
+PI	0.6622176293682854
+PS	0.7139489385488438
+DL	0.7172046973752975
+-
+Question 2(Airports Taxi Time):
+-
+There is no value can be used, so no output.	
+-
+Question 3(Cancellation Reasons):
+-
+There is no the most common reason for flight cancellations.
+---------------
+year 1987-1994
+---------------
+-
+execution time: 3 minutes 29 seconds
+-
+Question 1(On Schedule Airlines):
+-
+highest	
+WN	0.8191049670959755
+ML (1)	0.8068837801472822
+HP	0.7864096889067392
+lowest	
+PI	0.6622176293682854
+PS	0.7139489385488438
+DL	0.7211829290461506
+-
+Question 2(Airports Taxi Time):
+-
+There is no value can be used, so no output.
+-
+Question 3(Cancellation Reasons):
+-
+There is no the most common reason for flight cancellations.
+---------------
+year 1987-1995
+---------------
+-
+execution time: 3 minutes 07 seconds
+-
+Question 1(On Schedule Airlines):
+-
+highest	
+WN	0.810660402953308
+ML (1)	0.8068837801472822
+NW	0.7857280400821419
+lowest	
+PI	0.6622176293682854
+PS	0.7139489385488438
+DL	0.7195024423452635
+-
+Question 2(Airports Taxi Time):
+-
+highest	
+JFK	16.125534471373985
+EWR	14.660862740803607
+DFW	14.176996975494419
+lowest	
+GUM	3.4761904761904763
+KSM	3.9849624060150375
+DUT	4.191292875989446
+zero data	
+NONE	
+-
+Question 3(Cancellation Reasons):
+-
+There is no the most common reason for flight cancellations.
+---------------
+year 1987-1996
+---------------
+-
+execution time: 3 minutes 27 seconds
+-
+Question 1(On Schedule Airlines):
+-
+highest	
+ML (1)	0.8068837801472822
+WN	0.8035876467266039
+NW	0.7811238129773064
+lowest	
+PI	0.6622176293682854
+DL	0.7125043593430004
+PS	0.7139489385488438
+-
+Question 2(Airports Taxi Time):
+-
+highest	
+JFK	16.914142785124287
+EWR	15.301810349922189
+DFW	14.222427159701798
+lowest	
+GUM	3.4295302013422817
+KSM	3.802030456852792
+DUT	3.953658536585366
+zero data	
+ABI	0.0
+-
+Question 3(Cancellation Reasons):
+-
+There is no the most common reason for flight cancellations.	
+---------------
+year 1987-1997
+---------------
+-
+execution time: 3 minutes 42 seconds
+-
+Question 1(On Schedule Airlines):
+-
+highest	
+ML (1)	0.8068837801472822
+WN	0.7986126068060101
+NW	0.7742154753398007
+lowest	
+PI	0.6622176293682854
+DL	0.7095149044717725
+PS	0.7139489385488438
+-
+Question 2(Airports Taxi Time):
+-
+highest	
+JFK	16.888491810089477
+EWR	15.672909418236278
+DFW	14.218731745521676
+lowest	
+GUM	3.4066666666666667
+KSM	3.802030456852792
+DUT	3.8598045204642637
+zero data	
+ABI	0.0
+-
+Question 3(Cancellation Reasons):
+-
+There is no the most common reason for flight cancellations.
+---------------
+year 1987-1998
+---------------
+-
+execution time: 3 minutes 45 seconds
+-
+Question 1(On Schedule Airlines):
+-
+highest	
+ML (1)	0.8068837801472822
+WN	0.7937811578581796
+NW	0.7700646761356009
+lowest	
+PI	0.6622176293682854
+PS	0.7139489385488438
+DL	0.7140744771926594
+-
+Question 2(Airports Taxi Time):
+-
+highest	
+JFK	17.14430383412487
+EWR	16.232759142955228
+DFW	14.06996054027045
+lowest	
+GUM	3.4066666666666667
+KSM	3.802030456852792
+DUT	3.8427768166089966
+zero data	
+ABI	0.0
+GGG	0.0
+LNY	0.0
+MKK	0.0
+-
+Question 3(Cancellation Reasons):
+-
+There is no the most common reason for flight cancellations.	
+---------------
+year 1987-1999
+---------------
+-
+execution time: 4 minutes 43 seconds
+-
+Question 1(On Schedule Airlines):
+-
+highest	
+ML (1)	0.8068837801472822
+WN	0.7885148652912912
+NW	0.7710520744046908
+lowest	
+PI	0.6622176293682854
+AS	0.7128063363439407
+PS	0.7139489385488438
+-
+Question 2(Airports Taxi Time):
+-
+highest	
+JFK	17.348365871925527
+EWR	16.649576892662143
+DFW	14.05426914979551
+lowest	
+GUM	3.4066666666666667
+DUT	3.6560636182902586
+KSM	3.802030456852792
+zero data	
+ABI	0.0
+GGG	0.0
+LNY	0.0
+MKK	0.0
+-
+Question 3(Cancellation Reasons):
+-
+There is no the most common reason for flight cancellations.	
+---------------
+year 1987-2000
+---------------
+-
+execution time: 5 minutes 22 seconds
+-
+Question 1(On Schedule Airlines):
+-
+highest	
+AQ	0.87986743993372
+ML (1)	0.8068837801472822
+WN	0.7780343285273466
+lowest	
+PI	0.6622176293682854
+AS	0.7070269442743417
+PS	0.7139489385488438
+-
+Question 2(Airports Taxi Time):
+-
+highest	
+JFK	17.616169119728546
+EWR	16.814609855571952
+LGA	14.507535564452269
+lowest	
+GUM	3.4066666666666667
+DUT	3.5764945652173914
+KSM	3.802030456852792
+zero data	
+ABI	0.0
+GGG	0.0
+LNY	0.0
+MKK	0.0
+-
+Question 3(Cancellation Reasons):
+-
+There is no the most common reason for flight cancellations.	
+---------------
+year 1987-2001
+---------------
+-
+execution time: 5 minutes 27 seconds
+-
+Question 1(On Schedule Airlines):
+-
+highest	
+AQ	0.8266134777033766
+ML (1)	0.8068837801472822
+WN	0.779467341478821
+lowest	
+PI	0.6622176293682854
+AS	0.7022950888382051
+PS	0.7139489385488438
+-
+Question 2(Airports Taxi Time):
+-
+highest	
+JFK	17.451648725701144
+EWR	16.799488854350237
+LGA	14.692579314997339
+lowest	
+GUM	3.4066666666666667
+DUT	3.605410447761194
+KSM	3.802030456852792
+zero data	
+LNY	0.0
+MKK	0.0
+-
+Question 3(Cancellation Reasons):
+-
+There is no the most common reason for flight cancellations.	
+---------------
+year 1987-2002
+---------------
+-
+execution time: 6 minutes 36 seconds
+-
+Question 1(On Schedule Airlines):
+-
+highest	
+AQ	0.8266134777033766
+ML (1)	0.8068837801472822
+WN	0.7809500592549015
+lowest	
+PI	0.6622176293682854
+AS	0.7063145738307368
+PS	0.713948938548843
+-
+Question 2(Airports Taxi Time):
+-
+highest	
+ACY	169.5
+JFK	17.35488640211598
+EWR	16.670023986406115
+lowest	
+GUM	3.4066666666666667
+DUT	3.509649820931158
+KSM	3.802030456852792
+zero data	
+LNY	0.0
+MKK	0.0
+-
+Question 3(Cancellation Reasons):
+-
+There is no the most common reason for flight cancellations.	
+---------------
+year 1987-2003
+---------------
+-
+execution time: 7 minutes 07 seconds
+-
+Question 1(On Schedule Airlines):
+-
+highest	
+HA	0.8875770020533881
+OO	0.8608484151867036
+AQ	0.8266134777033766
+lowest	
+PI	0.6622176293682854
+AS	0.7127809884489709
+PS	0.7139489385488438
+-
+Question 2(Airports Taxi Time):
+-
+highest	
+VLD	20.803848750844026
+PHF	18.289991682838924
+JFK	17.031328375157514
+lowest	
+BFF	2.0
+FMN	2.5
+DUT	3.366929133858268
+zero data	
+PUB	0.0
+-
+Question 3(Cancellation Reasons):
+-
+Cancellation Code is A: carrier	The count is: 22402
+---------------
+year 1987-2004
+---------------
+-
+execution time: 7 minutes 27 seconds
+-
+Question 1(On Schedule Airlines):
+-
+highest	
+HA	0.918867958410401
+OO	0.8319970378387616
+AQ	0.8266134777033766
+lowest	
+PI	0.6622176293682854
+PS	0.7139489385488438
+AS	0.7148688325780302
+-
+Question 2(Airports Taxi Time):
+-
+highest	
+CKB	229.66666666666666
+MKK	45.77816291161179
+GNV	29.259280834613143
+lowest	
+PUB	1.125
+BFF	2.0
+DUT	3.357625649913345
+zero data	
+SKA	0.
+-
+Question 3(Cancellation Reasons):
+-
+Cancellation Code is A: carrier	The count is: 81754
+---------------
+year 1987-2005
+---------------
+-
+execution time: 8 minutes 07 seconds
+-
+Question 1(On Schedule Airlines):
+-
+highest	
+HA	0.9266563261688455
+AQ	0.8266134777033766
+OO	0.8212630758447155
+lowest	
+PI	0.6622176293682854
+FL	0.7027403369772947
+AS	0.7113041123282982
+-
+Question 2(Airports Taxi Time):
+-
+highest	
+CKB	212.3846153846154
+MKK	45.77816291161179
+FLO	30.613598946328615
+lowest	
+PUB	0.6923076923076923
+BFF	2.0
+FMN	3.125
+zero data	
+LAR	0.0
+ROW	0.0
+SKA	0.0
+-
+Question 3(Cancellation Reasons):
+-
+Cancellation Code is A: carrier	The count is: 141104
+---------------
+year 1987-2006
+---------------
+-
+execution time: 8 minutes 34 seconds
+-
+Question 1(On Schedule Airlines):
+-
+highest	
+HA	0.9246108199753391
+AQ	0.849015317286652
+ML (1)	0.8068837801472822
+lowest	
+PI	0.6622176293682854
+EV	0.7045863741062848
+FL	0.70510609879928
+-
+Question 2(Airports Taxi Time):
+-
+highest	
+CKB	197.85714285714286
+MKK	45.77816291161179
+VLD	28.221441947565545
+lowest	
+PUB	0.6
+BFF	2.0
+PVU	2.5555555555555554
+zero data	
+LAR	0.0
+LBF	0.0
+RCA	0.0
+ROW	0.0
+SKA	0.0
+-
+Question 3(Cancellation Reasons):
+-
+Cancellation Code is A: carrier	The count is: 196759
+---------------
+year 1987-2007
+---------------
+-
+execution time: 9 minutes 24 seconds
+-
+Question 1(On Schedule Airlines):
+-
+highest	
+HA	0.922295142383308
+AQ	0.8674063510834406
+ML (1)	0.8068837801472822
+lowest	
+PI	0.6622176293682854
+EV	0.6883638173556771
+AS	0.70914362391097
+-
+Question 2(Airports Taxi Time):
+-
+highest	
+CKB	197.85714285714286
+MKK	45.77816291161179
+VLD	24.602860715960606
+lowest	
+PUB	0.5294117647058824
+CYS	1.3333333333333333
+BFF	1.3333333333333333
+zero data	
+LAR	0.0
+LBF	0.0
+RCA	0.0
+SKA	0.0
+-
+Question 3(Cancellation Reasons):
+-
+Cancellation Code is A: carrier	The count is: 263538
+---------------
+year 1987-2008
+-
+execution time: 11 minutes 48 seconds
+-
+Question 1(On Schedule Airlines):
+-
+highest	
+HA	0.9130613247134968
+AQ	0.8704614308249784
+ML (1)	0.8068837801472822
+lowest	
+PI	0.6622176293682854
+EV	0.6931310266349684
+B6	0.7088574013567
+-
+Question 2(Airports Taxi Time):
+-
+highest	
+CKB	197.85714285714286
+MKK	45.77816291161179
+VLD	22.280210396885032
+lowest	
+CYS	1.3333333333333333
+BFF	1.3333333333333333
+PVU	1.7692307692307692
+zero data	
+LAR	0.0
+LBF	0.0
+RCA	0.0
+SKA	0.0
+-
+Question 3(Cancellation Reasons):
+-
+Cancellation Code is A: carrier	The count is: 317868
