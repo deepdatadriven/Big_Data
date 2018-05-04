@@ -1,0 +1,61 @@
+----------------------------------------------------------------------------------------
+For pseudo-distributed Mode:
+----------------------------------------------------------------------------------------
+1. In $HADOOP_HOME, Format the filesystem, start NameNode daemon and DataNode daemon:
+$ sbin/stop-dfs.sh
+$ bin/hdfs namenode -format
+$ sbin/start-dfs.sh
+
+2. Make the HDFS directories required to execute MapReduce jobs:
+$ bin/hdfs dfs -mkdir /user
+$ bin/hdfs dfs -mkdir /user/ubuntu
+
+3. Copy the input files into the distributed filesystem:
+$ bin/hdfs dfs -put input/100KWikiText.txt input
+
+4. Compile the RelativeFreqAB.java file:
+$ bin/hadoop com.sun.tools.javac.Main RelativeFreqAB.java
+
+5. Make a jar file:
+$ jar cf RelativeFreqAB.jar RelativeFreqAB*.class
+
+6. Run the RelativeFreqAB.jar file 
+$ bin/hadoop jar RelativeFreqAB.jar RelativeFreqAB input output
+
+7. Get the final result file from HDFS:
+$ bin/hdfs dfs -get output output
+
+8. See the result:
+$ cd output
+$ vi part-r-00000
+
+----------------------------------------------------------------------------------------
+For fully-distributed Mode:
+----------------------------------------------------------------------------------------
+1. In $HADOOP_HOME, Format the filesystem, start NameNode daemon and DataNode daemon:
+$ sbin/stop-dfs.sh
+$ hdfs namenode -format
+$ sbin/start-dfs.sh
+
+2. Make the HDFS directories required to execute MapReduce jobs (in /home/ubuntu/):
+$ hdfs dfs -mkdir -p input
+$ hdfs dfs -put 100KWikiText.txt input
+
+3. Start Yarn
+$ sbin/start-yarn.sh
+
+4. Compile the RelativeFreqAB.java file:
+$ hadoop com.sun.tools.javac.Main RelativeFreqAB.java
+
+5. Make a jar file:
+$ jar cf RelativeFreqAB.jar RelativeFreqAB*.class
+
+6. Run the RelativeFreqAB.jar file 
+$ hadoop jar RelativeFreqAB.jar RelativeFreqAB input output
+
+7. Get the final result file from HDFS:
+$ hdfs dfs -get output output
+
+8. See the result:
+$ cd output
+$ vi part-r-00000

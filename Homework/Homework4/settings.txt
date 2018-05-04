@@ -1,0 +1,81 @@
+i) the input/output format in each Hadoop task, i.e., the keys for the mappers and reducers
+
+First map-reduce: wordFreq
+-----------------------------------
+Mapper:
+Input: Line
+Key: LongWritable
+Value: Text
+Output:
+Key: Text (A+" "+B or "!"+" "+A)
+Value: LongWritable (1)
+
+Reducer:
+Input:
+Key: Text (A+" "+B or "!"+" "+A)
+Value: LongWritable (1)
+Output:
+Key: Text (A+" "+B or "!"+" "+A)
+Value: LongWritable (count of the key)
+
+Second map-reduce: pairFreq
+-----------------------------------
+Mapper:
+Input: Line
+Key: LongWritable
+Value: Text
+Output: 
+Key: Text (A+" "+B or "!"+" "+A)
+Value: LongWritable (count of the key)
+
+Reducer:
+Input:
+Key: Text (A+" "+B or "!"+" "+A)
+Value: LongWritable (count of the key)
+Output:
+Key: Text (A+" "+B)
+Value: Text (count of A+" "+B+" "+the count of A)
+
+Third map-reduce: topPairMapper
+-----------------------------------
+Mapper:
+Input: Line
+Key: LongWritable
+Value: Text
+Output: 
+Key: LongWritable (count of A+" "+B)
+Value: Text (A+" "+B+" "+the count of A)
+
+Reducer:
+Input:
+Key: LongWritable (count of A+" "+B)
+Value: Text (A+" "+B+" "+the count of A)
+Output: 
+Key: LongWritable (count of A+" "+B)
+Value: Text (A+" "+B+" "+the count of A)
+
+Fourth map-reduce: topPairMapper
+-----------------------------------
+Mapper:
+Input: Line
+Key: LongWritable
+Value: Text
+Output:
+Key: FloatWritable (value of f(B|A))
+Value: Text (A+" "+B)
+
+Reducer:
+Input:
+Key: FloatWritable (value of f(B|A))
+Value: Text (A+" "+B)
+Output:
+Key: FloatWritable (value of f(B|A))
+Value: Text (A+" "+B)
+
+ii) the Hadoop cluster settings you used, i.e., number of VM instances, number of mappers and reducers, etc.
+4 VM instances were been used. They are all the Ubuntu Server 16.04 LTS (HVM), SSD Volume Type of amazon aws EC2: t2.small.
+4 mappers and 4 reducers were been used in my Hadoop cluster.
+
+iii) the running time for your MapReduce approach in both pseudo and fully distributed modes
+Pseudo distributed mode: 2 minutes 10 seconds
+Fully distributed mode: 3 minutes 50 seconds

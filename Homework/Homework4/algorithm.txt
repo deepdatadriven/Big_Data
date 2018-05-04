@@ -1,0 +1,29 @@
+In the first map-reduce: wordFreq
+--------------------------------------
+Mapper: Change all the strings to lowercase, getting all the words which are a-z, " ", _ and +, other symbols will be replaced by "". To make the word pairs more meaningful, we only chose the words whose length is more than two. Then make the keys as A+" "+B or "!"+" "+A, and their value will be 1.
+
+Reducer: Getting the count of A B, or the count of ! A. The format of key are A B OR ! A, the format of value is the count of them.
+
+In the second map-reduce: pairFreq
+--------------------------------------
+Mapper: Getting the words and the count of words by using the toString method and the split method splitted by "\\t". The format of key is A B or ! A, the format of value is the count of them.
+
+Reducer: Because "!" is the smallest one in ascii, so it will be on the top of the output file of the first map-reduce. If the key contains "!", doing a for loop to put the count of As into a hashmap and the key-value of "!"+" "+"A" will be abandoned. Then doing another for loop to generate the key-value pair for the rest input. The format of key is A B, the format of value is the count of A B+" "+the count of A.
+
+In the third map-reduce: topPairMapper
+--------------------------------------
+Mapper: The format of key is the count of A B, the format of value is A B+" "+the count of A.
+
+Reducer: Using the WritableComparator to do a sorting job, and chose the top 1000 by comparing the count of A B.
+Note: Because this project need to output the top 100 word pairs, to make the result more meaningful, we chose the top 1000 word pairs' count to participate in the f(B|A) equation. The format of key and value are same as the Mapper.
+
+In the fourth map-reduce: RelFreqMapper
+--------------------------------------
+Mapper: caculate the counts by using the relative frequent equation. Relative frequency of A and B is countAB/countA, count(A,B) is the number of times A and B co-occur in a document, count(A) the number of times A occurs with anything else. The format of key is the value of f(B|A), the format of value is A B.
+
+Reducer: Using the WritableComparator to do a sorting job, select the top 100 word pairs. The format of key and value are same as the Mapper.
+
+
+
+
+
